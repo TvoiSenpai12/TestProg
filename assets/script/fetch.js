@@ -1,14 +1,14 @@
 const requestURL = 'http://testprog/russian-cities.json';
 
-async function test() {
+async function datacCitys() {
     let response = await fetch(requestURL);
     
     let citys = await response.json();
     
-    citys.forEach(function(index) {
+    citys.forEach((index) => {
         let emptyString = index['name'] + '';
-        document.querySelector('.test').innerHTML += `<li>${emptyString}</li>`;
+        document.querySelector('.popup__list').innerHTML += `<li>${emptyString}</li>`;
     });
 }
 
-test()
+datacCitys()
