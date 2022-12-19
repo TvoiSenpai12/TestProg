@@ -1,7 +1,7 @@
-document.querySelector('#popup__filter').oninput = () => {
+document.querySelector('#popup__filter').oninput = function() {
     let val = this.value.trim().toUpperCase();
     let listItems = document.querySelectorAll('.popup__list li');
-    
+
     if (val != '') {
         listItems.forEach((elem) => {
             (elem.innerText.toUpperCase().search(val) == -1) ? elem.classList.add('hide') : elem.classList.remove('hide');
