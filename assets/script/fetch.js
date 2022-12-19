@@ -1,4 +1,4 @@
-const requestURL = 'http://testprog/russian-cities.json';
+const requestURL = 'https://tvoisenpai12.github.io/TestProg/russian-cities.json';
 
 async function datacCitys() {
     let response = await fetch(requestURL);
